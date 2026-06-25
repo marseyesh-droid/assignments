@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomoca Coffee Ethiopia's Finest Since 1953</title>
+  <link rel="stylesheet" href="tomoca.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header-wrapper">
+    <div class="header-inner">
+      <a href="#" class="logo">Tomoca <span>Coffee</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#history">Our History</a></li>
+          <li><a href="#whyus">Why Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ <section class="hero-wrapper" id="home">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="banner.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Ethiopia's Finest Since 1953</p>
+    <h1>Tomoca Coffee</h1>
+    <p class="hero-tagline">WHERE EVERY CUP TELLS A STORY</p>
+    <a href="#menu" class="hero-btn">Explore Our Menu</a>
+  </div>
+</section>
+
+  <section class="intro-wrapper" id="about">
+    <h2>A Legacy Brewed in Ethiopia</h2>
+    <p>
+      Tomoca Coffee has been the heartbeat of Addis Ababa's coffee culture since 1953.
+      Born from a passion for the perfect cup, we source only the finest Ethiopian Arabica beans —
+      hand-picked from the highlands of Yirgacheffe, Sidama, and Harrar — then roasted
+      in-house with decades of tradition. Every sip is Ethiopia in a cup.
+    </p>
+  </section>
+
+  <section class="menu-wrapper" id="menu">
+    <h2>Our Menu & Prices</h2>
+
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-tab="espresso">Espresso</button>
+      <button class="tab-btn" data-tab="filter">Filter</button>
+      <button class="tab-btn" data-tab="cold">Cold Drinks</button>
+      <button class="tab-btn" data-tab="food">Food</button>
+    </div>
+
+    <div class="tab-content active" id="espresso">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-img">
+            <img src="espresso.jpeg" alt="Espresso" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">☕</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Espresso</h3>
+              <span class="price">ETB 45</span>
+            </div>
+            <p>A bold, concentrated shot of our signature Ethiopian Arabica blend. Pure, intense, unforgettable.</p>
+            <span class="menu-tag">Single Origin</span>
+          </div>
+        </div>
+        <div class="menu-item featured">
+          <div class="badge">House Favourite</div>
+          <div class="menu-item-img">
+            <img src="macchiato.jpeg" alt="Macchiato" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">🍵</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Macchiato</h3>
+              <span class="price">ETB 55</span>
+            </div>
+            <p>Espresso "stained" with a dollop of velvety foam. The classic Ethiopian coffee house order.</p>
+            <span class="menu-tag">Ethiopian Classic</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img">
+            <img src="latte.jpeg" alt="Latte" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">🥛</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Caffè Latte</h3>
+              <span class="price">ETB 75</span>
+            </div>
+            <p>Rich espresso with steamed milk and a thin layer of microfoam. Smooth and satisfying.</p>
+            <span class="menu-tag">Creamy & Smooth</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img">
+            <img src="cappuccino.jpeg" alt="Cappuccino" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">☕</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Cappuccino</h3>
+              <span class="price">ETB 70</span>
+            </div>
+            <p>Equal parts espresso, steamed milk, and dry foam. A timeless classic done with Ethiopian precision.</p>
+            <span class="menu-tag">Classic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter Tab -->
+    <div class="tab-content" id="filter">
+      <div class="menu-grid">
+        <div class="menu-item featured">
+          <div class="badge">Seasonal</div>
+          <div class="menu-item-img">
+            <img src="yirgacheffe.jpeg" alt="Yirgacheffe Pour Over" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">🫗</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Yirgacheffe Pour Over</h3>
+              <span class="price">ETB 95</span>
+            </div>
+            <p>Jasmine, blueberry, bright citrus. This season's star single-origin, brewed slow by hand.</p>
+            <span class="menu-tag">Single Origin</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img">
+            <img src="harrar.jpeg" alt="Harrar Drip" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">☕</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Harrar Drip</h3>
+              <span class="price">ETB 80</span>
+            </div>
+            <p>Wild berry and dark chocolate notes from Ethiopia's oldest coffee-growing region.</p>
+            <span class="menu-tag">Bold & Fruity</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img">
+            <img src="filter_batch.jpeg" alt="Batch Brew" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">🫖</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Batch Brew</h3>
+              <span class="price">ETB 55</span>
+            </div>
+            <p>House filter coffee kept at perfect temperature all day. Clean, consistent, and always fresh.</p>
+            <span class="menu-tag">All Day</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cold Tab -->
+    <div class="tab-content" id="cold">
+      <div class="menu-grid">
+        <div class="menu-item featured">
+          <div class="badge">12hr Steep</div>
+          <div class="menu-item-img">
+            <img src="cold_brew.jpeg" alt="Cold Brew" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">🧊</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Cold Brew</h3>
+              <span class="price">ETB 90</span>
+            </div>
+            <p>Steeped overnight for 12 hours. Incredibly smooth with zero bitterness and a long finish.</p>
+            <span class="menu-tag">Slow Brewed</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img">
+            <img src="iced_latte.jpeg" alt="Iced Latte" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">🥤</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Iced Latte</h3>
+              <span class="price">ETB 85</span>
+            </div>
+            <p>Double espresso over ice with cold fresh milk. Refreshing and energising on warm Addis days.</p>
+            <span class="menu-tag">Refreshing</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img">
+            <img src="iced_mocha.jpeg" alt="Iced Mocha" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">🍫</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Iced Mocha</h3>
+              <span class="price">ETB 95</span>
+            </div>
+            <p>Cold espresso with rich dark cocoa and chilled milk. Dessert in a glass.</p>
+            <span class="menu-tag">Indulgent</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Tab -->
+    <div class="tab-content" id="food">
+      <div class="menu-grid">
+        <div class="menu-item featured">
+          <div class="badge">Must Try</div>
+          <div class="menu-item-img">
+            <img src="teff_snack.jpeg" alt="Injera Snack" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">🫓</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Injera Snack Platter</h3>
+              <span class="price">ETB 120</span>
+            </div>
+            <p>A light Ethiopian snack platter — perfect with your morning macchiato. Local, authentic, delicious.</p>
+            <span class="menu-tag">Ethiopian</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img">
+            <img src="croissant.jpeg" alt="Croissant" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">🥐</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Butter Croissant</h3>
+              <span class="price">ETB 65</span>
+            </div>
+            <p>Delivered fresh every morning. Flaky, golden, and perfectly paired with an espresso.</p>
+            <span class="menu-tag">Freshly Baked</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img">
+            <img src="banana_bread.jpeg" alt="Banana Bread" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="menu-placeholder" style="display:none;">🍞</div>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-top">
+              <h3>Banana Bread</h3>
+              <span class="price">ETB 75</span>
+            </div>
+            <p>Baked in-house daily with dark chocolate chips and walnuts. A Tomoca café staple.</p>
+            <span class="menu-tag">House Baked</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUCTS ── -->
+  <section class="products-wrapper" id="products">
+    <h2>Our Products</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="tomoca_beans.jpeg" alt="Roasted Coffee Beans" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="product-card-placeholder" style="display:none;">☕</div>
+        </div>
+        <div class="product-info">
+          <h3>Roasted Beans</h3>
+          <p>Whole roasted Ethiopian Arabica beans. Take the Tomoca experience home. Available in 250g, 500g & 1kg.</p>
+          <span class="product-tag">Whole Bean</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="tomoca_ground.jpeg" alt="Ground Coffee" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="product-card-placeholder" style="display:none;">🫙</div>
+        </div>
+        <div class="product-info">
+          <h3>Ground Coffee</h3>
+          <p>Freshly ground to order. Choose your grind size — fine for espresso, medium for filter, coarse for French press.</p>
+          <span class="product-tag">Ground to Order</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="tomoca_gift.jpeg" alt="Gift Pack" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="product-card-placeholder" style="display:none;">🎁</div>
+        </div>
+        <div class="product-info">
+          <h3>Gift Packs</h3>
+          <p>Curated coffee gift sets featuring our finest blends. The perfect gift for any coffee lover in your life.</p>
+          <span class="product-tag">Gift Ready</span>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="tomoca_merch.jpeg" alt="Tomoca Merch" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="product-card-placeholder" style="display:none;">👕</div>
+        </div>
+        <div class="product-info">
+          <h3>Tomoca Merch</h3>
+          <p>Branded mugs, tumblers and tote bags. Carry the Tomoca story wherever your day takes you.</p>
+          <span class="product-tag">Limited Edition</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── OUR HISTORY ── -->
+  <section class="history-wrapper" id="history">
+    <div class="history-inner">
+      <div class="history-text">
+        <p class="section-eyebrow">Est. 1953</p>
+        <h2>Our History</h2>
+        <p>Tomoca was founded in 1953 by an Italian entrepreneur who fell in love with Ethiopia's extraordinary coffee. Nestled on Wavel Street in the heart of Addis Ababa, it became the city's first modern espresso bar — a cultural landmark where diplomats, artists, and everyday Ethiopians shared the same bench and the same cup.</p>
+        <p>Over seven decades, Tomoca has remained family-run, roasting beans the same way it always has — in-house, in small batches, with the same vintage Italian drum roaster that has been turning since the day it opened.</p>
+        <p>Today, Tomoca is not just a coffee shop. It is a piece of Ethiopian heritage — one of the country's oldest continuously operating businesses and a symbol of the rich coffee culture that Ethiopia gifted to the world.</p>
+      </div>
+      <div class="history-timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">1953</span>
+            <h4>Founded in Addis Ababa</h4>
+            <p>Tomoca opens its doors on Wavel Street, introducing espresso culture to Ethiopia.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">1970s</span>
+            <h4>A Cultural Landmark</h4>
+            <p>Becomes the meeting point for Addis Ababa's intellectuals, artists and diplomats.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">1990s</span>
+            <h4>Ethiopian Ownership</h4>
+            <p>The business passes into Ethiopian hands, keeping the tradition and recipes intact.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2010s</span>
+            <h4>Growing the Legacy</h4>
+            <p>Tomoca expands to new locations while preserving its original 1953 roasting methods.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">Today</span>
+            <h4>70+ Years Strong</h4>
+            <p>Still roasting in-house, still on Wavel Street, still the best cup in Addis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY US ── -->
+  <section class="whyus-wrapper" id="whyus">
+    <h2>Why Choose Tomoca?</h2>
+    <div class="whyus-grid">
+      <div class="whyus-card">
+        <div class="icon"><i class="fas fa-seedling"></i></div>
+        <h3>Ethiopian Origin</h3>
+        <p>We source directly from highland farms in Yirgacheffe, Sidama and Harrar — the birthplace of coffee.</p>
+      </div>
+      <div class="whyus-card">
+        <div class="icon"><i class="fas fa-fire"></i></div>
+        <h3>In-House Roasting</h3>
+        <p>Roasted fresh in our vintage Italian drum roaster. Small batches, maximum flavour.</p>
+      </div>
+      <div class="whyus-card">
+        <div class="icon"><i class="fas fa-history"></i></div>
+        <h3>70 Years of Craft</h3>
+        <p>Seven decades of expertise go into every single cup we serve.</p>
+      </div>
+      <div class="whyus-card">
+        <div class="icon"><i class="fas fa-heart"></i></div>
+        <h3>Made with Passion</h3>
+        <p>Every cup is crafted with the same care and love as the very first one in 1953.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact-wrapper" id="contact">
+    <h2>Find Us</h2>
+    <div class="contact-details">
+      <div class="contact-item">
+        <strong><i class="fas fa-phone"></i> Phone</strong>
+        +251 111 550 972<br>
+        +251 911 000 111
+      </div>
+      <div class="contact-item">
+        <strong><i class="fas fa-envelope"></i> Email</strong>
+        hello@tomocacoffee.com
+      </div>
+      <div class="contact-item">
+        <strong><i class="fas fa-map-marker-alt"></i> Location</strong>
+        Wavel Street, Piazza<br>
+        Addis Ababa, Ethiopia
+      </div>
+      <div class="contact-item">
+        <strong><i class="fas fa-clock"></i> Hours</strong>
+        Mon – Sat: 7:00am – 7:00pm<br>
+        Sunday: 8:00am – 5:00pm
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer-wrapper">
+    <p>Copyright © 2026 <span>Tomoca Coffee</span>. All rights reserved. | Est. 1953, Addis Ababa, Ethiopia.</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    // Close nav when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // Menu tabs
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Scroll fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.product-card, .whyus-card, .contact-item, .menu-item, .timeline-item').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
